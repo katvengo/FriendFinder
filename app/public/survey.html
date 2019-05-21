@@ -33,12 +33,14 @@
         #myButton {
             font-family: 'Caveat', cursive;
         }
+
         .myButton {
             font-family: 'Caveat', cursive;
             background-color: white;
             border: 2px pink solid;
             color: pink;
         }
+
         #customFont {
             font-family: 'Caveat', cursive !important;
         }
@@ -95,7 +97,7 @@
     <div class="columns is-centered has-text-grey-dark font-family: 'Indie Flower', cursive;">
         <div class="column is-half">
             <h1 class="customFont title">Survey Questions</h1><br>
-            <h5 class ="has-text-grey-dark is-size-4" style= " font-family: 'Indie Flower', cursive; " >About You</h5>
+            <h5 class="has-text-grey-dark is-size-4" style=" font-family: 'Indie Flower', cursive; ">About You</h5>
             <div class="field">
                 <label class="label customFont is-size-5">Name(Required)</label>
                 <div class="control">
@@ -116,31 +118,74 @@
                     </span>
                 </div>
             </div>
-            <section class ="section">
-            <div class="field">  
-                <h3 class ="has-text-grey-dark is-size-4" style= "font-family: 'Indie Flower', cursive;">Question 1</h5>
-                    <div class="control">
-                    <h4 class ="has-text-grey-dark is-size-5" style= "font-family: 'Indie Flower', cursive;">You prefer spending your time surrounded by other people<br>
-                        </h5><br>
-                        <div class="select coloredDropdown">
-                            <select>
-                                <option>Strongly Agree</option>
-                                <option>Agree</option>
-                                <option>Neutral</option>
-                                <option>Disagree</option>
-                                <option>Strongly Disagree</option>
-                            </select>
-                        </div>
-                    </div>
-            </div>
-            <!--End of Question One div-->
-            <div class="field">  
-                    <h3 class ="has-text-grey-dark is-size-4" style= "font-family: 'Indie Flower', cursive;">Question 2</h5>
+            <section class="section">
+                <div class="field">
+                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                        style="font-family: 'Indie Flower', cursive;">Question 1</h5>
                         <div class="control">
-                        <h4 class ="has-text-grey-dark is-size-5" style= "font-family: 'Indie Flower', cursive;">You prefer spending your time surrounded by other people<br>
-                            </h5><br>
+                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
+                                prefer spending your time surrounded by other people<br>
+                                </h5><br>
+                                <div class="select coloredDropdown">
+                                    <select class="survey" id="first">
+                                        <option>Strongly Agree</option>
+                                        <option>Agree</option>
+                                        <option>Neutral</option>
+                                        <option>Disagree</option>
+                                        <option>Strongly Disagree</option>
+                                    </select>
+                                </div>
+                        </div>
+                </div>
+                <!--End of Question One div-->
+                <div class="field">
+                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                        style="font-family: 'Indie Flower', cursive;">Question 2</h5>
+                        <div class="control">
+                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
+                                have many friends<br>
+                                </h5><br>
+                                <div class="select coloredDropdown">
+                                    <select class="survey" id="second">
+                                        <option>Strongly Agree</option>
+                                        <option>Agree</option>
+                                        <option>Neutral</option>
+                                        <option>Disagree</option>
+                                        <option>Strongly Disagree</option>
+                                    </select>
+                                </div>
+                        </div>
+                </div>
+                <!--End of Question 2-->
+                <div class="field">
+                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                        style="font-family: 'Indie Flower', cursive;">Question 3</h5>
+                        <div class="control">
+                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
+                                are more focused on internal thoughts, feelings and moods rather than seeking out
+                                external stimulation.<br>
+                                </h5><br>
+                                <div class="select coloredDropdown">
+                                    <select class="survey" id="third">
+                                        <option>Strongly Agree</option>
+                                        <option>Agree</option>
+                                        <option>Neutral</option>
+                                        <option>Disagree</option>
+                                        <option>Strongly Disagree</option>
+                                    </select>
+                                </div>
+                        </div>
+                </div>
+                <!--End of Question 3-->
+                <div class="field">
+                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                        style="font-family: 'Indie Flower', cursive;">Question 4</h5>
+                        <div class="control">
+                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">
+                                People Often Describe You as Quiet and May Find It Difficult to Get to Know You
+                            </h4><br>
                             <div class="select coloredDropdown">
-                                <select>
+                                <select class="survey" id="fourth">
                                     <option>Strongly Agree</option>
                                     <option>Agree</option>
                                     <option>Neutral</option>
@@ -150,14 +195,16 @@
                             </div>
                         </div>
                 </div>
-                <!--End of Question 2-->
-                <div class="field">  
-                        <h3 class ="has-text-grey-dark is-size-4" style= "font-family: 'Indie Flower', cursive;">Question 3</h5>
-                            <div class="control">
-                            <h4 class ="has-text-grey-dark is-size-5" style= "font-family: 'Indie Flower', cursive;">You prefer spending your time surrounded by other people<br>
+                <!--End of question 4-->
+                <div class="field">
+                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                        style="font-family: 'Indie Flower', cursive;">Question 5</h5>
+                        <div class="control">
+                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
+                                Like to Learn By Watching<br>
                                 </h5><br>
                                 <div class="select coloredDropdown">
-                                    <select>
+                                    <select class="survey" id="fifth">
                                         <option>Strongly Agree</option>
                                         <option>Agree</option>
                                         <option>Neutral</option>
@@ -165,141 +212,137 @@
                                         <option>Strongly Disagree</option>
                                     </select>
                                 </div>
-                            </div>
-                    </div>
-                    <!--End of Question 3-->
-                    <div class="field">  
-                            <h3 class ="has-text-grey-dark is-size-4" style= "font-family: 'Indie Flower', cursive;">Question 4</h5>
-                                <div class="control">
-                                <h4 class ="has-text-grey-dark is-size-5" style= "font-family: 'Indie Flower', cursive;">You prefer spending your time surrounded by other people<br>
-                                    </h5><br>
-                                    <div class="select coloredDropdown">
-                                        <select>
-                                            <option>Strongly Agree</option>
-                                            <option>Agree</option>
-                                            <option>Neutral</option>
-                                            <option>Disagree</option>
-                                            <option>Strongly Disagree</option>
-                                        </select>
-                                    </div>
+                        </div>
+                </div>
+                <!--End of Question 5-->
+                <div class="field">
+                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                        style="font-family: 'Indie Flower', cursive;">Question 6</h5>
+                        <div class="control">
+                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
+                                enjoy being the center of attention<br>
+                                </h5><br>
+                                <div class="select coloredDropdown">
+                                    <select class="survey" id="six">
+                                        <option>Strongly Agree</option>
+                                        <option>Agree</option>
+                                        <option>Neutral</option>
+                                        <option>Disagree</option>
+                                        <option>Strongly Disagree</option>
+                                    </select>
                                 </div>
                         </div>
-                        <!--End of question 4-->
-                        <div class="field">  
-                                <h3 class ="has-text-grey-dark is-size-4" style= "font-family: 'Indie Flower', cursive;">Question 5</h5>
-                                    <div class="control">
-                                    <h4 class ="has-text-grey-dark is-size-5" style= "font-family: 'Indie Flower', cursive;">You prefer spending your time surrounded by other people<br>
-                                        </h5><br>
-                                        <div class="select coloredDropdown">
-                                            <select>
-                                                <option>Strongly Agree</option>
-                                                <option>Agree</option>
-                                                <option>Neutral</option>
-                                                <option>Disagree</option>
-                                                <option>Strongly Disagree</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                            </div>
-                            <!--End of Question 5-->
-                            <div class="field">  
-                                    <h3 class ="has-text-grey-dark is-size-4" style= "font-family: 'Indie Flower', cursive;">Question 6</h5>
-                                        <div class="control">
-                                        <h4 class ="has-text-grey-dark is-size-5" style= "font-family: 'Indie Flower', cursive;">You prefer spending your time surrounded by other people<br>
-                                            </h5><br>
-                                            <div class="select coloredDropdown">
-                                                <select>
-                                                    <option>Strongly Agree</option>
-                                                    <option>Agree</option>
-                                                    <option>Neutral</option>
-                                                    <option>Disagree</option>
-                                                    <option>Strongly Disagree</option>
-                                                </select>
-                                            </div>
-                                        </div>
+                </div>
+                <!--End of question 6-->
+                <div class="field">
+                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                        style="font-family: 'Indie Flower', cursive;">Question 7</h5>
+                        <div class="control">
+                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
+                                feel isolated by too much time alone<br>
+                                </h5><br>
+                                <div class="select coloredDropdown">
+                                    <select class="survey" id="seven">
+                                        <option>Strongly Agree</option>
+                                        <option>Agree</option>
+                                        <option>Neutral</option>
+                                        <option>Disagree</option>
+                                        <option>Strongly Disagree</option>
+                                    </select>
                                 </div>
-                                <!--End of question 6-->
-                                <div class="field">  
-                                        <h3 class ="has-text-grey-dark is-size-4" style= "font-family: 'Indie Flower', cursive;">Question 7</h5>
-                                            <div class="control">
-                                            <h4 class ="has-text-grey-dark is-size-5" style= "font-family: 'Indie Flower', cursive;">You prefer spending your time surrounded by other people<br>
-                                                </h5><br>
-                                                <div class="select coloredDropdown">
-                                                    <select>
-                                                        <option>Strongly Agree</option>
-                                                        <option>Agree</option>
-                                                        <option>Neutral</option>
-                                                        <option>Disagree</option>
-                                                        <option>Strongly Disagree</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                    </div>
-                                    <!--End of question 7-->
-                                    <div class="field">  
-                                            <h3 class ="has-text-grey-dark is-size-4" style= "font-family: 'Indie Flower', cursive;">Question 8</h5>
-                                                <div class="control">
-                                                <h4 class ="has-text-grey-dark is-size-5" style= "font-family: 'Indie Flower', cursive;">You prefer spending your time surrounded by other people<br>
-                                                    </h5><br>
-                                                    <div class="select coloredDropdown">
-                                                        <select>
-                                                            <option>Strongly Agree</option>
-                                                            <option>Agree</option>
-                                                            <option>Neutral</option>
-                                                            <option>Disagree</option>
-                                                            <option>Strongly Disagree</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                        </div>
-                                        <!--End of question 8-->
-                                        <div class="field">  
-                                                <h3 class ="has-text-grey-dark is-size-4" style= "font-family: 'Indie Flower', cursive;">Question 9</h5>
-                                                    <div class="control">
-                                                    <h4 class ="has-text-grey-dark is-size-5" style= "font-family: 'Indie Flower', cursive;">You prefer spending your time surrounded by other people<br>
-                                                        </h5><br>
-                                                        <div class="select coloredDropdown">
-                                                            <select>
-                                                                <option>Strongly Agree</option>
-                                                                <option>Agree</option>
-                                                                <option>Neutral</option>
-                                                                <option>Disagree</option>
-                                                                <option>Strongly Disagree</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                            <!--End of question 9-->
-                                            <div class="field">  
-                                                    <h3 class ="has-text-grey-dark is-size-4" style= "font-family: 'Indie Flower', cursive;">Question 10</h5>
-                                                        <div class="control">
-                                                        <h4 class ="has-text-grey-dark is-size-5" style= "font-family: 'Indie Flower', cursive;">You prefer spending your time surrounded by other people<br>
-                                                            </h5><br>
-                                                            <div class="select coloredDropdown">
-                                                                <select>
-                                                                    <option>Strongly Agree</option>
-                                                                    <option>Agree</option>
-                                                                    <option>Neutral</option>
-                                                                    <option>Disagree</option>
-                                                                    <option>Strongly Disagree</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                </div>
-                                                <!--End of question 10-->
+                        </div>
+                </div>
+                <!--End of question 7-->
+                <div class="field">
+                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                        style="font-family: 'Indie Flower', cursive;">Question 8</h5>
+                        <div class="control">
+                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
+                                look to others and outside sources for ideas and inspiration<br>
+                                </h5><br>
+                                <div class="select coloredDropdown">
+                                    <select class="survey" id="eight">
+                                        <option>Strongly Agree</option>
+                                        <option>Agree</option>
+                                        <option>Neutral</option>
+                                        <option>Disagree</option>
+                                        <option>Strongly Disagree</option>
+                                    </select>
+                                </div>
+                        </div>
+                </div>
+                <!--End of question 8-->
+                <div class="field">
+                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                        style="font-family: 'Indie Flower', cursive;">Question 9</h5>
+                        <div class="control">
+                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
+                                prefer spending your time surrounded by other people<br>
+                                </h5><br>
+                                <div class="select coloredDropdown">
+                                    <select class="survey" id="nine">
+                                        <option>Strongly Agree</option>
+                                        <option>Agree</option>
+                                        <option>Neutral</option>
+                                        <option>Disagree</option>
+                                        <option>Strongly Disagree</option>
+                                    </select>
+                                </div>
+                        </div>
+                </div>
+                <!--End of question 9-->
+                <div class="field">
+                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                        style="font-family: 'Indie Flower', cursive;">Question 10</h5>
+                        <div class="control">
+                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
+                                prefer smaller groups of people when you socialize<br>
+                                </h5><br>
+                                <div class="select coloredDropdown">
+                                    <select class="survey" id="ten">
+                                        <option>Strongly Agree</option>
+                                        <option>Agree</option>
+                                        <option>Neutral</option>
+                                        <option>Disagree</option>
+                                        <option>Strongly Disagree</option>
+                                    </select>
+                                </div>
+                        </div>
+                </div>
+                <!--End of question 10-->
             </section>
             <div class="field is-grouped">
                 <div class="control">
-                    <button class="button myButton">Submit</button>
+                    <button class="button myButton is-large" id="submit">Submit</button>
                 </div>
 
             </div>
 
         </div>
     </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <script type="text/javascript">
+        // javascript goes here 
+        $(document).ready(function () {
+            $("#submit").click(function () {
+                var que1 = $('#first option:selected').val();
+                var que2 = $('#second option:selected').val();
+                var que3 = $('#third option:selected').val();
+                var que4 = $('#fourth option:selected').val();
+                var que5 = $('#fifth option:selected').val();
+                var que6 = $('#six option:selected').val();
+                var que7 = $('#seven option:selected').val();
+                var que8 = $('#eight option:selected').val();
+                var que9 = $('#nine option:selected').val();
+                var que10 = $('#ten option:selected').val();
 
+                var userAnswers = [que1, que2, que3, que4, que5, que6, que7, que8, que9, que10]
+                console.log(userAnswers
 
+            )});
+        });
+    </script>
 
 </body>
 <footer class="footer">
