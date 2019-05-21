@@ -325,42 +325,44 @@
     <script type="text/javascript">
         // javascript goes here 
         $(document).ready(function () {
-            // event.preventDefault();
+                    // event.preventDefault();
 
-            $("#submit").click(function () {
-                    var newfriends = [{
-                        "name": $("#friend-name").val().trim(),
-                        "photo": $("#friend-photo").val().trim(),
-                        "scores": [
-                            $('#first').val(),
-                            $('#second').val(),
-                            $('#third').val(),
-                            $('#fourth').val(),
-                            $('#fifth').val(),
-                            $('#six').val(),
-                            $('#seven').val(),
-                            $('#eight').val(),
-                            $('#nine').val(),
-                            $('#ten').val(),
-                        ]
-                    }]
-                    console.log(newfriends)
+                    $("#submit").click(function () {
+                                var newfriends = [
+                                    {
+                                    "name": $("#friend-name").val().trim(),
+                                    "photo": $("#friend-photo").val().trim(),
+                                    "scores": [
+                                        $('#first').val(),
+                                        $('#second').val(),
+                                        $('#third').val(),
+                                        $('#fourth').val(),
+                                        $('#fifth').val(),
+                                        $('#six').val(),
+                                        $('#seven').val(),
+                                        $('#eight').val(),
+                                        $('#nine').val(),
+                                        $('#ten').val(),
+                                    ]
+                                }
+                            ]
+                                console.log(newfriends)
+                                friends.push(newfriends);
+                                console.log(friends)
+                            }
 
 
-                }
 
-
-
-            )
-        });
+                                )
+                            });
     </script>
 
 </body>
 <footer class="footer">
     <div class="content has-text-centered">
         <p>
-            <i class="fas fa-heart" style="color: pink; font-size: 20px;"></i> <strong
-                class="webTitle">FriendFinder</strong> by <a href="https://katvengo.github.io/index.html/"
+            <i class="fas fa-heart" style="color: pink; font-size: 20px;"></i> 
+            <strong class="webTitle">FriendFinder</strong> by <a href="https://katvengo.github.io/index.html/"
                 id="navLink">Kat Vengo</a>
             <h6 style="color: #ffc0cb; font-family: 'Pacifico', cursive;">Copyright 2019</h6>
 
