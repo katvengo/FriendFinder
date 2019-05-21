@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Pacifico&display=swap" rel="stylesheet">
+    <!-- <script src="server.js"></script> -->
+    <style>
+            .changeColor{
+            background-color: #E8E9EB !important;
+            opacity: 0.4;
+        }
+        
+        a.linkHover:hover{
+        color: #FF69B4;
+        border: 2px solid #FF69B4;
+        font-weight: bold;
+        } 
+        
+        .webTitle{
+            font-family: 'Pacifico', cursive;
+            color: pink;
+        }
+        
+        #myButton{
+            font-family: 'Caveat', cursive;
+        }
+        
+        #customFont{
+            font-family: 'Caveat', cursive;
+        }
+        
+        #navLink, a.navLink:active, a.navLink:link{
+            font-family: 'Pacifico', cursive;
+            color: #ffc0cb;
+        }
+            </style>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <i class="fas fa-heart" style="color: pink; font-size: 45px;"></i>
+                <h3 style="color: pink; font-size: 45px;" class="webTitle">FriendFinder</h3>
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <div class="navbar-start">
+                        <a class="navbar-item" id="navLink" href="/home">
+                            Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <section class="hero is-large changeColor">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title" id="customFont">Answer a few basic questions. <br>
+                    Then find the friend with the greatest compatibility!</h1><br>
+                <a class="button is-large linkHover" id="myButton" id="myAnc" href="/survey">Go to Survey!</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <i class="fas fa-heart" style="color: pink; font-size: 20px;"></i> <strong
+                class="webTitle">FriendFinder</strong> by <a href="https://katvengo.github.io/index.html/"
+                id="navLink">Kat Vengo</a>
+            <h6 style="color: #ffc0cb; font-family: 'Pacifico', cursive;">Copyright 2019</h6>
+
+        </p>
+    </div>
+</footer>
+<script>
+    $("#myAnc").click(function() {
+        console.log("go to survey")
+    });</script>
+</html>
