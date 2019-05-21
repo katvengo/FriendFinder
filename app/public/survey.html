@@ -101,7 +101,7 @@
             <div class="field">
                 <label class="label customFont is-size-5">Name(Required)</label>
                 <div class="control">
-                    <input class="input" type="text">
+                    <input class="input" type="text" id="friend-name">
                 </div>
             </div>
 
@@ -109,7 +109,7 @@
             <div class="field">
                 <label class="label customFont is-size-5">Link to Photo Image(Required)</label>
                 <div class="control has-icons-left has-icons-right">
-                    <input class="input" type="text">
+                    <input class="input" type="text" id="friend-photo">
                     <span class="icon is-small is-left">
                         <i class="fas fa"></i>
                     </span>
@@ -325,22 +325,43 @@
     <script type="text/javascript">
         // javascript goes here 
         $(document).ready(function () {
+            event.preventDefault();
             $("#submit").click(function () {
-                var que1 = $('#first option:selected').val();
-                var que2 = $('#second option:selected').val();
-                var que3 = $('#third option:selected').val();
-                var que4 = $('#fourth option:selected').val();
-                var que5 = $('#fifth option:selected').val();
-                var que6 = $('#six option:selected').val();
-                var que7 = $('#seven option:selected').val();
-                var que8 = $('#eight option:selected').val();
-                var que9 = $('#nine option:selected').val();
-                var que10 = $('#ten option:selected').val();
+                    var newfriends = [{
+                        "name": $("#friend-name").val().trim(),
+                        "photo": $("#friend-photo").val().trim(),
+                        "scores": [
+                            5,
+                            1,
+                            4,
+                            4,
+                            5,
+                            1,
+                            2,
+                            5,
+                            4,
+                            1
+                        ]
+                    }]
 
-                var userAnswers = [que1, que2, que3, que4, que5, que6, que7, que8, que9, que10]
-                console.log(userAnswers
+                    var que1 = $('#first option:selected').val();
+                    var que2 = $('#second option:selected').val();
+                    var que3 = $('#third option:selected').val();
+                    var que4 = $('#fourth option:selected').val();
+                    var que5 = $('#fifth option:selected').val();
+                    var que6 = $('#six option:selected').val();
+                    var que7 = $('#seven option:selected').val();
+                    var que8 = $('#eight option:selected').val();
+                    var que9 = $('#nine option:selected').val();
+                    var que10 = $('#ten option:selected').val();
+                    var userAnswers = [que1, que2, que3, que4, que5, que6, que7, que8, que9, que10]
+                    console.log(userAnswers)
 
-            )});
+                }
+
+
+
+            )
         });
     </script>
 
