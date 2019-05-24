@@ -73,5 +73,9 @@ scores.sort(function (a, b) {
     return a.score - b.score;
 
 });
-
-console.log(scores[0].name)
+let bestMatch = {
+    name: scores[0].name,
+    image: scores[0].photo,
+    
+}
+console.log(bestMatch)

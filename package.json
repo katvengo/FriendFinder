@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/katvengo/FriendFinder#readme",
   "dependencies": {
+    "bulma": "^0.7.5",
     "express": "^4.17.0",
     "jquery": "^3.4.1",
     "path": "^0.12.7"

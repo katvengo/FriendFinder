@@ -11,16 +11,35 @@ module.exports = function (app) {
 
         newfriends.friends = newfriends.name.replace(/\s+/g, "").toLowerCase();
 
-        console.log(newfriends);
-
         friends.push(newfriends);
 
+        function displayScores(person1, person2) {
+            let difference = 0
+            person1.scores.forEach(function (score, index) {
+                difference = Math.abs(parseInt(person1.scores) - parseInt(person2.scores));
+            })
+            return difference
+        }
 
-        res.json(newfriends);
+        let scores = friends.map(function (person) {
+            const difference = displayScores(person, newfriends)
+            let newPerson = Object.create(person)
+            newPerson.score = difference;
 
-    
-        // This will be used to handle incoming survey results.
-        // This route will also be used to handle the compatibility logic.
+            return newPerson;
+        })
+        // console.log(scores)
+        scores.sort(function (a, b) {
+            return a.score - b.score;
+
+        });
+        let bestMatch = {
+            name: scores[0].name,
+            image: scores[0].photo,
+        }
+        // console.log(bestMatch)
+        res.json(bestMatch)
+
     })
 
 }

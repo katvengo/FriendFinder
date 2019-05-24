@@ -271,7 +271,16 @@
 
         </div>
     </div>
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            Basic text
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -294,9 +303,34 @@
                             $('#ten').val(),
                         ]
                     }
-                    console.log(newfriends)
-                    
-                    
+                    // console.log(newfriends)
+                    $.ajax({
+                        url: "/api/friends",
+                        method: "GET"
+                    }).then(function (res) {
+                        console.log(res)
+                            .catch(function (error) {
+                                console.log(error)
+                            })
+                    });
+
+                  
+                    //         // let html = "<h1>We found a Match!</h1>"
+                    //         // var mainDiv = $("<div class='container'>");
+                    //         // var div = $("<div class='secondDiv'>");
+                    //         // var newFriend = $("<p>").text("Your new friend is: " + data.name);
+                    //         // var imageDiv = $("<img>").attr("src", data.image);
+                    //         // div.append(newFriend)
+                    //         // div.append(imageDiv)
+
+                    //         // html.append(mainDiv)
+
+                    //         // $(".modal-content").append(html)
+                    //         .fail(function (error) {
+                    //             console.log(error)
+                    //         })
+                    // });
+
                 },
 
             )
