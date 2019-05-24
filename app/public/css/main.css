@@ -1,0 +1,49 @@
+ 
+        .changeColor {
+            background-color: #E8E9EB !important;
+            opacity: 0.4;
+        }
+
+        a.linkHover:hover {
+            color: #FF69B4;
+            border: 2px solid #FF69B4;
+            font-weight: bold;
+        }
+
+        .webTitle {
+            font-family: 'Pacifico', cursive;
+            color: pink;
+        }
+
+        #myButton {
+            font-family: 'Caveat', cursive;
+        }
+
+        .myButton {
+            font-family: 'Caveat', cursive;
+            background-color: white;
+            border: 2px pink solid;
+            color: pink;
+        }
+
+        #customFont {
+            font-family: 'Caveat', cursive !important;
+        }
+
+        .customFont {
+            font-family: 'Caveat', cursive !important;
+            font-weight: bold;
+        }
+
+        #navLink,
+        a.navLink:active,
+        a.navLink:link {
+            font-family: 'Pacifico', cursive;
+            color: #ffc0cb;
+        }
+
+        .coloredDropdown {
+            border: 1px pink solid;
+        }
+    
+         

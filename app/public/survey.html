@@ -6,61 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="/main"> -->
+    <link rel="stylesheet" media="screen" href="/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Caveat|Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-    <!-- <script src="server.js"></script> -->
-    <style>
-        .changeColor {
-            background-color: #E8E9EB !important;
-            opacity: 0.4;
-        }
-
-        a.linkHover:hover {
-            color: #FF69B4;
-            border: 2px solid #FF69B4;
-            font-weight: bold;
-        }
-
-        .webTitle {
-            font-family: 'Pacifico', cursive;
-            color: pink;
-        }
-
-        #myButton {
-            font-family: 'Caveat', cursive;
-        }
-
-        .myButton {
-            font-family: 'Caveat', cursive;
-            background-color: white;
-            border: 2px pink solid;
-            color: pink;
-        }
-
-        #customFont {
-            font-family: 'Caveat', cursive !important;
-        }
-
-        .customFont {
-            font-family: 'Caveat', cursive !important;
-            font-weight: bold;
-        }
-
-        #navLink,
-        a.navLink:active,
-        a.navLink:link {
-            font-family: 'Pacifico', cursive;
-            color: #ffc0cb;
-        }
-
-        .coloredDropdown {
-            border: 1px pink solid;
-        }
-    </style>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://bulma.io">
@@ -323,45 +274,40 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script type="text/javascript">
-        // javascript goes here 
         $(document).ready(function () {
-                    // event.preventDefault();
 
-                    $("#submit").click(function () {
-                                var newfriends = [
-                                    {
-                                    "name": $("#friend-name").val().trim(),
-                                    "photo": $("#friend-photo").val().trim(),
-                                    "scores": [
-                                        $('#first').val(),
-                                        $('#second').val(),
-                                        $('#third').val(),
-                                        $('#fourth').val(),
-                                        $('#fifth').val(),
-                                        $('#six').val(),
-                                        $('#seven').val(),
-                                        $('#eight').val(),
-                                        $('#nine').val(),
-                                        $('#ten').val(),
-                                    ]
-                                }
-                            ]
-                                console.log(newfriends)
-                                friends.push(newfriends);
-                                console.log(friends)
-                            }
+            $("#submit").click(function (event) {
+                    event.preventDefault()
+                    var newfriends = {
+                        "name": $("#friend-name").val().trim(),
+                        "photo": $("#friend-photo").val().trim(),
+                        "scores": [
+                            $('#first').val(),
+                            $('#second').val(),
+                            $('#third').val(),
+                            $('#fourth').val(),
+                            $('#fifth').val(),
+                            $('#six').val(),
+                            $('#seven').val(),
+                            $('#eight').val(),
+                            $('#nine').val(),
+                            $('#ten').val(),
+                        ]
+                    }
+                    console.log(newfriends)
+                    
+                    
+                },
 
-
-
-                                )
-                            });
+            )
+        });
     </script>
 
 </body>
 <footer class="footer">
     <div class="content has-text-centered">
         <p>
-            <i class="fas fa-heart" style="color: pink; font-size: 20px;"></i> 
+            <i class="fas fa-heart" style="color: pink; font-size: 20px;"></i>
             <strong class="webTitle">FriendFinder</strong> by <a href="https://katvengo.github.io/index.html/"
                 id="navLink">Kat Vengo</a>
             <h6 style="color: #ffc0cb; font-family: 'Pacifico', cursive;">Copyright 2019</h6>

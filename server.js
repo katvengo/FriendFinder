@@ -1,6 +1,6 @@
 var express = require("express")
 var path = require("path");
-
+var jquery = require("jquery")
 var app = express();
 
 var PORT = process.env.PORT || 8083;
@@ -10,6 +10,7 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 app.use(express.static('public'));
+
 
 const friends = require('./app/data/friends.js');
 require("./app/routing/apiRoutes.js")(app);
