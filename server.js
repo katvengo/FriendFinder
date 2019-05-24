@@ -10,6 +10,7 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 app.use(express.static('public'));
+app.use(express.static('data'));
 
 
 const friends = require('./app/data/friends.js');

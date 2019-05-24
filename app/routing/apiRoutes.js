@@ -11,7 +11,7 @@ module.exports = function (app) {
 
         newfriends.friends = newfriends.name.replace(/\s+/g, "").toLowerCase();
 
-        friends.push(newfriends);
+       
 
         function displayScores(person1, person2) {
             let difference = 0
@@ -39,7 +39,7 @@ module.exports = function (app) {
         }
         // console.log(bestMatch)
         res.json(bestMatch)
-
+        friends.push(newfriends);
     })
 
 }
