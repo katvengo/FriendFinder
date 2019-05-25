@@ -302,32 +302,7 @@
 
                     </div>
                 </div>
-                <!-- <div class="card" id="overrride">
-                    <header class="card-header">
-                        <p class="card-header-title" id="cardHeaderh1">
-                            We found you a match!
-                        </p>
-                    </header>
-                    <div class="card-image imageCenter">
-                        <figure class="image is-4by3 friendImage">
-
-                        </figure>
-
-                    </div>
-                    <div class="card-content">
-                        <div class="media-content alignRight">
-                            <p class="title is-4 friendName">
-
-                            </p>
-                        </div>
-
-                    </div>
-                    end of this div -->
-                <!-- <div class="closeButton">
-                        <button class="button is-light close">Thank you!</button>
-                    </div> -->
-                <!--</div> end of card -->
-            </div>
+            
             <!-- end of modal -->
     </main>
 </body>
@@ -353,8 +328,7 @@
     }
     $(document).ready(function () {
         $(".katModal").hide();
-        // $(".modalSecond").hide()
-        // $("#modal-overlay").modal('hide');
+       
 
         $("#submitSurvey").click(function (event) {
             event.preventDefault()
@@ -386,12 +360,12 @@
                 $(".friendName").append(newFriend);
                 $(".friendImage").append(imageDiv);
                 $('.katModal').show();
-                // $(".close").on("click", function () {
-                //     emptyOut()
-                //     $(".katModal").hide()
-                //     $("#modal-overlayTwo").hide()
-                //     newSurvey()
-                // })
+                $(".close").on("click", function () {
+                    emptyOut()
+                    $(".katModal").hide()
+                    // $("#modal-overlayTwo").hide()
+                    newSurvey()
+                })
             })
 
         }) //end of submit on click 

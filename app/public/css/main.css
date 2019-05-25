@@ -176,7 +176,14 @@ select {
     width: 100%;
 }
 .closeButton{
-    text-align:center;
+    text-align: center;
+}
+
+.close{
+    color: pink !important;
+    font-family: 'Pacifico', cursive;
+    background-color: white !important;
+    border: 1px pink solid !important;
 }
 .friendImage {
     height: 100px;
