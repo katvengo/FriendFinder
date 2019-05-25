@@ -274,20 +274,35 @@
                     </div>
                     <!--End of question 10-->
                 </section>
-               <button class="button is-large submitSurvey">Submit</button>
-                 
+                <button class="button is-large" id="submitSurvey">Submit</button>
+
 
             </div>
-            <!-- Second Modal -->
-            <!-- <div class="modalSecond">
-                <p class ="modalSecondPTag"> Want to play again?</p>
+            <!--Second Modal -->
+            <div class="modalSecond">
+                <p class="modalSecondPTag"> Want to play again?</p>
                 <div class="content modalSecond">
                     <button class="button is-light closeTwo">Let's do it!</button>
                 </div>
-            </div> -->
+            </div>
             <!-- First Modal -->
-            <div id="modalNone">
-                <div class="card" id="overrride">
+            <div class="katModal">
+                <div class="myContent">
+                    <p class="card-header-title" id="cardHeaderh1">
+                        We found you a match!
+                    </p>
+                    <div class="image is-4by3 friendImage">
+
+                    </div>
+                    <div class="title is-4 friendName">
+
+                    </div> 
+                    <div class="closeButton">
+                            <button class="button is-large is-light close">Thank you!</button>
+
+                    </div>
+                </div>
+                <!-- <div class="card" id="overrride">
                     <header class="card-header">
                         <p class="card-header-title" id="cardHeaderh1">
                             We found you a match!
@@ -307,11 +322,11 @@
                         </div>
 
                     </div>
-                    <!-- end of this div -->
-                    <div class="closeButton">
+                    end of this div -->
+                <!-- <div class="closeButton">
                         <button class="button is-light close">Thank you!</button>
-                    </div>
-                </div> <!-- end of card -->
+                    </div> -->
+                <!--</div> end of card -->
             </div>
             <!-- end of modal -->
     </main>
@@ -322,28 +337,27 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
 <script type="text/javascript">
+    function emptyOut() {
+        $(".friendName").empty();
+        $(".friendImage").empty();
+        $("#friend-name").val("");
+        $("#friend-photo").val("");
+    }
+
+    function newSurvey() {
+        $(".modalSecond").modal('show')
+        $(".closeTwo").on("click", function () {
+            $(".modalSecond").modal('hide')
+        })
+
+    }
     $(document).ready(function () {
-        function emptyOut() {
-            $(".friendName").empty();
-            $(".friendImage").empty();
-            $("#friend-name").val("");
-            $("#friend-photo").val("");
-        }
-
-        function newSurvey() {
-            $(".modalSecond").modal('show')
-            $(".closeTwo").on("click", function () {
-                $(".modalSecond").modal('hide')
-            })
-
-        }
-        $("#modalNone").hide();
-        $(".modalSecond").hide()
+        $(".katModal").hide();
+        // $(".modalSecond").hide()
         // $("#modal-overlay").modal('hide');
 
-        $(".submitSurvey").submit(function (event) {
+        $("#submitSurvey").click(function (event) {
             event.preventDefault()
-
             var newfriends = {
                 "name": $("#friend-name").val().trim(),
                 "photo": $("#friend-photo").val().trim(),
@@ -371,17 +385,17 @@
 
                 $(".friendName").append(newFriend);
                 $(".friendImage").append(imageDiv);
-                $('#modalNone').show();
-                $(".close").on("click", function () {
-                    emptyOut()
-                    $("#modalNone").hide()
-                    $("#modal-overlayTwo").hide()
-                    newSurvey()
-                })
+                $('.katModal').show();
+                // $(".close").on("click", function () {
+                //     emptyOut()
+                //     $(".katModal").hide()
+                //     $("#modal-overlayTwo").hide()
+                //     newSurvey()
+                // })
             })
 
         }) //end of submit on click 
-        
+
 
     }) //End of document.ready
 </script>
