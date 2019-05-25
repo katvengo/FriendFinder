@@ -1,49 +1,197 @@
- 
-        .changeColor {
-            background-color: #E8E9EB !important;
-            opacity: 0.4;
-        }
+#customFont {
+    font-family: 'Caveat', cursive !important;
+}
 
-        a.linkHover:hover {
-            color: #FF69B4;
-            border: 2px solid #FF69B4;
-            font-weight: bold;
-        }
+*/ .customFont {
+    font-family: 'Caveat', cursive !important;
+    font-weight: bold;
+}
 
-        .webTitle {
-            font-family: 'Pacifico', cursive;
-            color: pink;
-        }
+.changeColor {
+    background-color: #E8E9EB !important;
+    opacity: 0.4;
+}
 
-        #myButton {
-            font-family: 'Caveat', cursive;
-        }
+#myButton {
+    font-family: 'Caveat', cursive;
+}
 
-        .myButton {
-            font-family: 'Caveat', cursive;
-            background-color: white;
-            border: 2px pink solid;
-            color: pink;
-        }
+#overrride {
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center !important;
+    height: 75% !important;
+    width: 75% !important;
+    padding: 15px !important;
+    margin: 10px;
+}
 
-        #customFont {
-            font-family: 'Caveat', cursive !important;
-        }
+/* .overrride2 {
+    display: flex;
+    margin-top: 20px;
+} */
 
-        .customFont {
-            font-family: 'Caveat', cursive !important;
-            font-weight: bold;
-        }
 
-        #navLink,
-        a.navLink:active,
-        a.navLink:link {
-            font-family: 'Pacifico', cursive;
-            color: #ffc0cb;
-        }
+.webTitle {
+    font-family: 'Pacifico', cursive;
+    color: pink;
+    font-size: 45px;
+}
 
-        .coloredDropdown {
-            border: 1px pink solid;
-        }
-    
-         
+
+.copyrightText {
+    font-family: 'Pacifico', cursive;
+    color: pink;
+}
+
+#customFont {
+    font-family: 'Caveat', cursive !important;
+
+}
+
+
+.titleHeaders {
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+}
+
+/* formerly myButton class */
+/* First Modal to display Best Match */
+#modalNone {
+    display: none !important;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    background-color: pink;
+}
+.submitSurvey {
+    font-family: 'Caveat', cursive;
+    background-color: white;
+    border: 2px pink solid;
+    color: pink;
+}
+
+/* Looking good */
+#navLink,
+a.navLink:active,
+a.navLink:link {
+    font-family: 'Pacifico', cursive;
+    color: #ffc0cb;
+}
+
+a.linkHover:hover,
+.close:hover,
+.close:focus,
+a.navLink:hover {
+    color: #FF69B4;
+    border: 2px solid #FF69B4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Dropdowns. See which doesnt work */
+::after,
+::before,
+select {
+    border-color: pink !important;
+
+}
+
+.coloredDropdown {
+    border: 1px pink solid;
+}
+
+
+
+#cardHeaderh1 {
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+    color: pink;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+#cardHeaderModal {
+    font-size: 20px;
+    color: pink;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+/* #modal-overlayTwo {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+
+.imageCenter {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    flex-grow: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.friendImage {
+    width: 200px;
+    height: 220px;
+    justify-content: center;
+    padding-right: 80px;
+}
+
+.friendName {
+    justify-content: center;
+    text-align: center;
+    /* margin-top: 80px; */
+    padding-right: 110px;
+    color: pink !important;
+    font-family: 'Caveat', cursive !important;
+    font-size: 45px !important;
+}
+
+.friendImage {
+    height: 100px;
+    width: 75px;
+}
+
+/* Second Modal to be displayed last */
+.modalSecond {
+    display: none;
+    /* position: fixed; */
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: 50%;
+    /* transform: translate(-50%, -50%); */
+    /* max-width: 100%;
+     /* max-height: 100%; */
+    overflow: auto;
+    background-color: pink;
+
+}
+
+.modalSecondPTag {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+#modalSecond {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Caveat', cursive !important;
+}

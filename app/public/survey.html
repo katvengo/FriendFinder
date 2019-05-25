@@ -12,11 +12,12 @@
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Caveat|Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://bulma.io">
                 <i class="fas fa-heart" style="color: pink; font-size: 45px;"></i>
-                <h3 style="color: pink; font-size: 45px;" class="webTitle">FriendFinder</h3>
+                <h3 class="webTitle">FriendFinder</h3>
             </a>
 
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
@@ -43,119 +44,105 @@
         </div>
     </nav>
 </head>
+<!--beginning of body-->
 
 <body>
-    <div class="columns is-centered has-text-grey-dark font-family: 'Indie Flower', cursive;">
-        <div class="column is-half">
-            <h1 class="customFont title">Survey Questions</h1><br>
-            <h5 class="has-text-grey-dark is-size-4" style=" font-family: 'Indie Flower', cursive; ">About You</h5>
-            <div class="field">
-                <label class="label customFont is-size-5">Name(Required)</label>
-                <div class="control">
-                    <input class="input" type="text" id="friend-name">
+    <main>
+        <div class="columns is-centered has-text-grey-dark font-family: 'Indie Flower', cursive;">
+            <div class="column is-half">
+                <h1 class="titleHeaders title text-grey-dark">Survey Questions</h1><br>
+                <h5 class="has-text-grey-dark is-size-4" style=" font-family: 'Indie Flower', cursive; ">About You</h5>
+                <div class="field">
+                    <label class="label titleHeaders is-size-5">Name(Required)</label>
+                    <div class="control">
+                        <input class="input" type="text" id="friend-name">
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="field">
-                <label class="label customFont is-size-5">Link to Photo Image(Required)</label>
-                <div class="control has-icons-left has-icons-right">
-                    <input class="input" type="text" id="friend-photo">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <i class="fas fa"></i>
-                    </span>
-                </div>
-            </div>
-            <section class="section">
                 <div class="field">
-                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
-                        style="font-family: 'Indie Flower', cursive;">Question 1</h5>
-                        <div class="control">
-                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
-                                prefer spending your time surrounded by other people<br>
-                                </h5><br>
-                                <div class="select coloredDropdown">
-                                    <select class="survey" id="first">
-                                        <option value="1">Strongly Agree</option>
-                                        <option value="2">Agree</option>
-                                        <option value="3">Neutral</option>
-                                        <option value="4">Disagree</option>
-                                        <option value="5">Strongly Disagree</option>
-                                    </select>
-                                </div>
-                        </div>
+                    <label class="label titleHeaders is-size-5">Link to Photo Image(Required)</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input" type="text" id="friend-photo">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                            <i class="fas fa"></i>
+                        </span>
+                    </div>
                 </div>
-                <!--End of Question One div-->
-                <div class="field">
-                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
-                        style="font-family: 'Indie Flower', cursive;">Question 2</h5>
-                        <div class="control">
-                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
-                                have many friends<br>
-                                </h5><br>
-                                <div class="select coloredDropdown">
-                                    <select class="survey" id="second">
-                                        <option value="1">Strongly Agree</option>
-                                        <option value="2">Agree</option>
-                                        <option value="3">Neutral</option>
-                                        <option value="4">Disagree</option>
-                                        <option value="5">Strongly Disagree</option>
-                                    </select>
-                                </div>
-                        </div>
-                </div>
-                <!--End of Question 2-->
-                <div class="field">
-                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
-                        style="font-family: 'Indie Flower', cursive;">Question 3</h5>
-                        <div class="control">
-                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
-                                are more focused on internal thoughts, feelings and moods rather than seeking out
-                                external stimulation.<br>
-                                </h5><br>
-                                <div class="select coloredDropdown">
-                                    <select class="survey" id="third">
-                                        <option value="1">Strongly Agree</option>
-                                        <option value="2">Agree</option>
-                                        <option value="3">Neutral</option>
-                                        <option value="4">Disagree</option>
-                                        <option value="5">Strongly Disagree</option>
-                                    </select>
-                                </div>
-                        </div>
-                </div>
-                <!--End of Question 3-->
-                <div class="field">
-                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
-                        style="font-family: 'Indie Flower', cursive;">Question 4</h5>
-                        <div class="control">
-                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">
-                                People Often Describe You as Quiet and May Find It Difficult to Get to Know You
-                            </h4><br>
-                            <div class="select coloredDropdown">
-                                <select class="survey" id="fourth">
-                                    <option value="1">Strongly Agree</option>
-                                    <option value="2">Agree</option>
-                                    <option value="3">Neutral</option>
-                                    <option value="4">Disagree</option>
-                                    <option value="5">Strongly Disagree</option>
-                                </select>
+                <section class="section">
+                    <div class="field">
+                        <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                            style="font-family: 'Indie Flower', cursive;">Question 1</h5>
+                            <div class="control">
+                                <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">
+                                    You
+                                    prefer spending your time surrounded by other people<br>
+                                    </h5><br>
+                                    <div class="select coloredDropdown">
+                                        <select class="survey" id="first">
+                                            <option value="1">Strongly Agree</option>
+                                            <option value="2">Agree</option>
+                                            <option value="3">Neutral</option>
+                                            <option value="4">Disagree</option>
+                                            <option value="5">Strongly Disagree</option>
+                                        </select>
+                                    </div>
                             </div>
-                        </div>
-                </div>
-                <!--End of question 4-->
-                <div class="field">
-                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
-                        style="font-family: 'Indie Flower', cursive;">Question 5</h5>
-                        <div class="control">
-                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
-                                Like to Learn By Watching<br>
-                                </h5><br>
+                    </div>
+                    <!--End of Question One div-->
+                    <div class="field">
+                        <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                            style="font-family: 'Indie Flower', cursive;">Question 2</h5>
+                            <div class="control">
+                                <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">
+                                    You
+                                    have many friends<br>
+                                    </h5><br>
+                                    <div class="select coloredDropdown">
+                                        <select class="survey" id="second">
+                                            <option value="1">Strongly Agree</option>
+                                            <option value="2">Agree</option>
+                                            <option value="3">Neutral</option>
+                                            <option value="4">Disagree</option>
+                                            <option value="5">Strongly Disagree</option>
+                                        </select>
+                                    </div>
+                            </div>
+                    </div>
+                    <!--End of Question 2-->
+                    <div class="field">
+                        <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                            style="font-family: 'Indie Flower', cursive;">Question 3</h5>
+                            <div class="control">
+                                <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">
+                                    You
+                                    are more focused on internal thoughts, feelings and moods rather than seeking out
+                                    external stimulation.<br>
+                                    </h5><br>
+                                    <div class="select coloredDropdown">
+                                        <select class="survey" id="third">
+                                            <option value="1">Strongly Agree</option>
+                                            <option value="2">Agree</option>
+                                            <option value="3">Neutral</option>
+                                            <option value="4">Disagree</option>
+                                            <option value="5">Strongly Disagree</option>
+                                        </select>
+                                    </div>
+                            </div>
+                    </div>
+                    <!--End of Question 3-->
+                    <div class="field">
+                        <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                            style="font-family: 'Indie Flower', cursive;">Question 4</h5>
+                            <div class="control">
+                                <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">
+                                    People Often Describe You as Quiet and May Find It Difficult to Get to Know You
+                                </h4><br>
                                 <div class="select coloredDropdown">
-                                    <select class="survey" id="fifth">
+                                    <select class="survey" id="fourth">
                                         <option value="1">Strongly Agree</option>
                                         <option value="2">Agree</option>
                                         <option value="3">Neutral</option>
@@ -163,182 +150,246 @@
                                         <option value="5">Strongly Disagree</option>
                                     </select>
                                 </div>
-                        </div>
-                </div>
-                <!--End of Question 5-->
-                <div class="field">
-                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
-                        style="font-family: 'Indie Flower', cursive;">Question 6</h5>
-                        <div class="control">
-                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
-                                enjoy being the center of attention<br>
-                                </h5><br>
-                                <div class="select coloredDropdown">
-                                    <select class="survey" id="six">
-                                        <option value="1">Strongly Agree</option>
-                                        <option value="2">Agree</option>
-                                        <option value="3">Neutral</option>
-                                        <option value="4">Disagree</option>
-                                        <option value="5">Strongly Disagree</option>
-                                    </select>
-                                </div>
-                        </div>
-                </div>
-                <!--End of question 6-->
-                <div class="field">
-                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
-                        style="font-family: 'Indie Flower', cursive;">Question 7</h5>
-                        <div class="control">
-                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
-                                feel isolated by too much time alone<br>
-                                </h5><br>
-                                <div class="select coloredDropdown">
-                                    <select class="survey" id="seven">
-                                        <option value="1">Strongly Agree</option>
-                                        <option value="2">Agree</option>
-                                        <option value="3">Neutral</option>
-                                        <option value="4">Disagree</option>
-                                        <option value="5">Strongly Disagree</option>
-                                    </select>
-                                </div>
-                        </div>
-                </div>
-                <!--End of question 7-->
-                <div class="field">
-                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
-                        style="font-family: 'Indie Flower', cursive;">Question 8</h5>
-                        <div class="control">
-                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
-                                look to others and outside sources for ideas and inspiration<br>
-                                </h5><br>
-                                <div class="select coloredDropdown">
-                                    <select class="survey" id="eight">
-                                        <option value="1">Strongly Agree</option>
-                                        <option value="2">Agree</option>
-                                        <option value="3">Neutral</option>
-                                        <option value="4">Disagree</option>
-                                        <option value="5">Strongly Disagree</option>
-                                    </select>
-                                </div>
-                        </div>
-                </div>
-                <!--End of question 8-->
-                <div class="field">
-                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
-                        style="font-family: 'Indie Flower', cursive;">Question 9</h5>
-                        <div class="control">
-                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
-                                prefer spending your time surrounded by other people<br>
-                                </h5><br>
-                                <div class="select coloredDropdown">
-                                    <select class="survey" id="nine">
-                                        <option value="1">Strongly Agree</option>
-                                        <option value="2">Agree</option>
-                                        <option value="3">Neutral</option>
-                                        <option value="4">Disagree</option>
-                                        <option value="5">Strongly Disagree</option>
-                                    </select>
-                                </div>
-                        </div>
-                </div>
-                <!--End of question 9-->
-                <div class="field">
-                    <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
-                        style="font-family: 'Indie Flower', cursive;">Question 10</h5>
-                        <div class="control">
-                            <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">You
-                                prefer smaller groups of people when you socialize<br>
-                                </h5><br>
-                                <div class="select coloredDropdown">
-                                    <select class="survey" id="ten">
-                                        <option value="1">Strongly Agree</option>
-                                        <option value="2">Agree</option>
-                                        <option value="3">Neutral</option>
-                                        <option value="4">Disagree</option>
-                                        <option value="5">Strongly Disagree</option>
-                                    </select>
-                                </div>
-                        </div>
-                </div>
-                <!--End of question 10-->
-            </section>
-            <div class="field is-grouped">
-                <div class="control">
-                    <button class="button myButton is-large" id="submit">Submit</button>
-                </div>
+                            </div>
+                    </div>
+                    <!--End of question 4-->
+                    <div class="field">
+                        <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                            style="font-family: 'Indie Flower', cursive;">Question 5</h5>
+                            <div class="control">
+                                <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">
+                                    You
+                                    Like to Learn By Watching<br>
+                                    </h5><br>
+                                    <div class="select coloredDropdown">
+                                        <select class="survey" id="fifth">
+                                            <option value="1">Strongly Agree</option>
+                                            <option value="2">Agree</option>
+                                            <option value="3">Neutral</option>
+                                            <option value="4">Disagree</option>
+                                            <option value="5">Strongly Disagree</option>
+                                        </select>
+                                    </div>
+                            </div>
+                    </div>
+                    <!--End of Question 5-->
+                    <div class="field">
+                        <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                            style="font-family: 'Indie Flower', cursive;">Question 6</h5>
+                            <div class="control">
+                                <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">
+                                    You
+                                    enjoy being the center of attention<br>
+                                    </h5><br>
+                                    <div class="select coloredDropdown">
+                                        <select class="survey" id="six">
+                                            <option value="1">Strongly Agree</option>
+                                            <option value="2">Agree</option>
+                                            <option value="3">Neutral</option>
+                                            <option value="4">Disagree</option>
+                                            <option value="5">Strongly Disagree</option>
+                                        </select>
+                                    </div>
+                            </div>
+                    </div>
+                    <!--End of question 6-->
+                    <div class="field">
+                        <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                            style="font-family: 'Indie Flower', cursive;">Question 7</h5>
+                            <div class="control">
+                                <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">
+                                    You
+                                    feel isolated by too much time alone<br>
+                                    </h5><br>
+                                    <div class="select coloredDropdown">
+                                        <select class="survey" id="seven">
+                                            <option value="1">Strongly Agree</option>
+                                            <option value="2">Agree</option>
+                                            <option value="3">Neutral</option>
+                                            <option value="4">Disagree</option>
+                                            <option value="5">Strongly Disagree</option>
+                                        </select>
+                                    </div>
+                            </div>
+                    </div>
+                    <!--End of question 7-->
+                    <div class="field">
+                        <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                            style="font-family: 'Indie Flower', cursive;">Question 8</h5>
+                            <div class="control">
+                                <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">
+                                    You
+                                    look to others and outside sources for ideas and inspiration<br>
+                                    </h5><br>
+                                    <div class="select coloredDropdown">
+                                        <select class="survey" id="eight">
+                                            <option value="1">Strongly Agree</option>
+                                            <option value="2">Agree</option>
+                                            <option value="3">Neutral</option>
+                                            <option value="4">Disagree</option>
+                                            <option value="5">Strongly Disagree</option>
+                                        </select>
+                                    </div>
+                            </div>
+                    </div>
+                    <!--End of question 8-->
+                    <div class="field">
+                        <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                            style="font-family: 'Indie Flower', cursive;">Question 9</h5>
+                            <div class="control">
+                                <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">
+                                    You
+                                    prefer spending your time surrounded by other people<br>
+                                    </h5><br>
+                                    <div class="select coloredDropdown">
+                                        <select class="survey" id="nine">
+                                            <option value="1">Strongly Agree</option>
+                                            <option value="2">Agree</option>
+                                            <option value="3">Neutral</option>
+                                            <option value="4">Disagree</option>
+                                            <option value="5">Strongly Disagree</option>
+                                        </select>
+                                    </div>
+                            </div>
+                    </div>
+                    <!--End of question 9-->
+                    <div class="field">
+                        <h3 class="has-text-grey-dark is-size-4 has-text-weight-bold"
+                            style="font-family: 'Indie Flower', cursive;">Question 10</h5>
+                            <div class="control">
+                                <h4 class="has-text-grey-dark is-size-5" style="font-family: 'Indie Flower', cursive;">
+                                    You
+                                    prefer smaller groups of people when you socialize<br>
+                                    </h5><br>
+                                    <div class="select coloredDropdown">
+                                        <select class="survey" id="ten">
+                                            <option value="1">Strongly Agree</option>
+                                            <option value="2">Agree</option>
+                                            <option value="3">Neutral</option>
+                                            <option value="4">Disagree</option>
+                                            <option value="5">Strongly Disagree</option>
+                                        </select>
+                                    </div>
+                            </div>
+                    </div>
+                    <!--End of question 10-->
+                </section>
+               <button class="button is-large submitSurvey">Submit</button>
+                 
 
             </div>
+            <!-- Second Modal -->
+            <!-- <div class="modalSecond">
+                <p class ="modalSecondPTag"> Want to play again?</p>
+                <div class="content modalSecond">
+                    <button class="button is-light closeTwo">Let's do it!</button>
+                </div>
+            </div> -->
+            <!-- First Modal -->
+            <div id="modalNone">
+                <div class="card" id="overrride">
+                    <header class="card-header">
+                        <p class="card-header-title" id="cardHeaderh1">
+                            We found you a match!
+                        </p>
+                    </header>
+                    <div class="card-image imageCenter">
+                        <figure class="image is-4by3 friendImage">
 
-        </div>
-    </div>
-    <div class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
+                        </figure>
 
-        </div>
-        <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+                    </div>
+                    <div class="card-content">
+                        <div class="media-content alignRight">
+                            <p class="title is-4 friendName">
 
-    <script type="text/javascript">
-        $(document).ready(function () {
+                            </p>
+                        </div>
 
-                    $("#submit").click(function (event) {
-                            event.preventDefault()
-                            var newfriends = {
-                                "name": $("#friend-name").val().trim(),
-                                "photo": $("#friend-photo").val().trim(),
-                                "scores": [
-                                    $('#first').val(),
-                                    $('#second').val(),
-                                    $('#third').val(),
-                                    $('#fourth').val(),
-                                    $('#fifth').val(),
-                                    $('#six').val(),
-                                    $('#seven').val(),
-                                    $('#eight').val(),
-                                    $('#nine').val(),
-                                    $('#ten').val(),
-                                ]
-                            }
-                            // console.log(newfriends)
-                            $.ajax({
-                                url: "/api/friends",
-                                method: "POST",
-                                data: newfriends,
-                                datatype: 'text'
-                            }).then(function (res) {
-                                console.log(res)
-                                let html = "<h1>We found a Match!</h1>"
-                                var mainDiv = $("<div class='container'>");
-                                var div = $("<div class='secondDiv'>");
-                                var newFriend = $("<p>").text("Your new friend is: " + res.name);
-                                var imageDiv = $("<img>").attr("src", res.image);
-
-                                div.append(newFriend)
-                                div.append(imageDiv)
-
-                                mainDiv.append(html)
-                                mainDiv.append(div)
-
-                                $(".modal-content").append(mainDiv)
-                                
-
-                        },
-
-                    )
-                    })
-                })
-    </script>
-
+                    </div>
+                    <!-- end of this div -->
+                    <div class="closeButton">
+                        <button class="button is-light close">Thank you!</button>
+                    </div>
+                </div> <!-- end of card -->
+            </div>
+            <!-- end of modal -->
+    </main>
 </body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        function emptyOut() {
+            $(".friendName").empty();
+            $(".friendImage").empty();
+            $("#friend-name").val("");
+            $("#friend-photo").val("");
+        }
+
+        function newSurvey() {
+            $(".modalSecond").modal('show')
+            $(".closeTwo").on("click", function () {
+                $(".modalSecond").modal('hide')
+            })
+
+        }
+        $("#modalNone").hide();
+        $(".modalSecond").hide()
+        // $("#modal-overlay").modal('hide');
+
+        $(".submitSurvey").submit(function (event) {
+            event.preventDefault()
+
+            var newfriends = {
+                "name": $("#friend-name").val().trim(),
+                "photo": $("#friend-photo").val().trim(),
+                "scores": [
+                    $('#first').val(),
+                    $('#second').val(),
+                    $('#third').val(),
+                    $('#fourth').val(),
+                    $('#fifth').val(),
+                    $('#six').val(),
+                    $('#seven').val(),
+                    $('#eight').val(),
+                    $('#nine').val(),
+                    $('#ten').val(),
+                ]
+            }
+            $.ajax({
+                url: "/api/friends",
+                method: "POST",
+                data: newfriends,
+                datatype: 'text'
+            }).then(function (res) {
+                var newFriend = $("<p>").text(`Your new best friend is ${res.name}!!!`);
+                var imageDiv = $("<img>").attr("src", res.image);
+
+                $(".friendName").append(newFriend);
+                $(".friendImage").append(imageDiv);
+                $('#modalNone').show();
+                $(".close").on("click", function () {
+                    emptyOut()
+                    $("#modalNone").hide()
+                    $("#modal-overlayTwo").hide()
+                    newSurvey()
+                })
+            })
+
+        }) //end of submit on click 
+        
+
+    }) //End of document.ready
+</script>
 <footer class="footer">
     <div class="content has-text-centered">
         <p>
-            <i class="fas fa-heart" style="color: pink; font-size: 20px;"></i>
-            <strong class="webTitle">FriendFinder</strong> by <a href="https://katvengo.github.io/index.html/"
+            <i class="fas fa-heart" style="color: pink; font-size: 20px;"></i> <strong
+                class="copyrightText">FriendFinder</strong> by <a href="https://katvengo.github.io/index.html/"
                 id="navLink">Kat Vengo</a>
             <h6 style="color: #ffc0cb; font-family: 'Pacifico', cursive;">Copyright 2019</h6>
 
@@ -347,5 +398,3 @@
 </footer>
 
 </html>
-
-        
